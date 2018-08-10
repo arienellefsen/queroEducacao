@@ -2,3 +2,10 @@ $pink: blue;
 div {
     color: $pink;
 }
+
+.container-image {
+    background: url(../assets/flor.jpeg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 100%;
+}
