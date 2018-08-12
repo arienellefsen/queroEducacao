@@ -34,7 +34,7 @@ module.exports = {
                             name: '[path][name].[ext]?[hash]',
                             mozjpeg: {
                                 progressive: true,
-                                quality: 65
+                                quality: 100
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
@@ -62,7 +62,8 @@ module.exports = {
             filename: "style.css",
         }),
         new HtmlWebPackPlugin({
-            template: "./index.html"
+            template: "./index.html",
+            filename: "./index.html"
         }),
     ],
 };

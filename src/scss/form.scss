@@ -1,0 +1,69 @@
+.content__form {
+    border: 1px solid #999;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 10px -15px #111;
+    position: relative;
+    top: 20px;
+    background: #fff;
+    fieldset {
+        border: none;
+        padding: 10px;
+        p {
+            height: 38px;
+            font-family: "Lato", Arial, sans-serif;
+            font-size: 14px;
+            color: #858585;
+            line-height: 3.5em;
+        }
+    }
+    label {
+        font-family: $sans-serif;
+        font-size: $font-text;
+        color: $gray;
+        line-height: 1.6em;
+    }
+    .form__select {
+        background: #fff;
+        height: 38px;
+        font-family: "Lato", Arial, sans-serif;
+        font-size: 14px;
+        color: #858585;
+        line-height: 1.6em;
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .form__select--small {
+        width: 30%;
+    }
+    .form__field {
+        padding-top: 10px;
+        button {
+            background: #10ca79;
+            width: 95%;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        a:link,
+        a:active,
+        a:visited {
+            color: #d49e3c;
+            text-decoration: none;
+            text-align: center;
+            font-family: "Lato", Arial, sans-serif;
+            font-size: 14px;
+            margin: 0px auto;
+            display: grid;
+            padding-top: 10px;
+        }
+        input {
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+    }
+}

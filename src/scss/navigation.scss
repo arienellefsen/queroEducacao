@@ -1,0 +1,31 @@
+ nav {
+     background-color: #109cb3;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ ul.top__nav--primary {
+     width: 990px;
+     display: flex;
+     height: 45px;
+     padding: 10px;
+     @include flexBox(space-between, center);
+     li.brand {
+         font-weight: bold;
+     }
+ }
+ 
+ ul.top__nav--primary li {
+     list-style: none;
+     font-family: $sans-serif;
+     font-size: 14px;
+     padding: 12px;
+     a {
+         text-decoration: none;
+         color: #fff;
+     }
+     &:hover {
+         background: red;
+         padding: 12px;
+     }
+ }

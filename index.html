@@ -4,17 +4,135 @@
 <head>
     <meta charset="utf-8">
     <title>webpack 4 quickstart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
-        <h1> test ariene </h1>
-        <img src="./src/assets/flor.jpeg">
-        <div class="container-image">
+    <header>
+        <div class='top__header'>
+            <div class='top__icon--informacao'>
+                <img src='./src/assets/desktop-qb-indica@1x-(1)_05.jpg' class="top__icon" />
+                <h3>Como funciona</h3>
+                <span class="top__icon--separator"></span>
+                <img src='./src/assets/desktop-qb-indica@1x-(1)_07.jpg' class="top__icon" />
+                <h3>0800909090</h3>
+            </div>
+            <div class="top__icon--ajuda top__icon--separator">
+                <img src='./src/assets/mobile-qb-indica@1x-(1)_06.jpg' class="top__icon" />
+                <h3>Ajuda</h3>
+            </div>
+            <div class='top__icon--logo'>
+                <img src='./src/assets/desktop-qb-indica@1x-(1)_02.jpg' />
+            </div>
+            <div class='top__icon--login'>
+                <span class="top__icon--separator"></span>
+                <h3 class="top__text--desktop">Entre ou crie sua conta</h3>
+                <img src='./src/assets/mobile-qb-indica@1x-(1)_09.jpg' class="top__icon" />
+                <h3 class="top__text--mobile">Entrar</h3>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <nav>
+
+        <ul class="top__nav--primary">
+            <li class="brand">
+                <a href="#">Minha Conta </a>
+            </li>
+            <li>
+                <a href="#">test</a>
+            </li>
+            <li>
+                <a href="#">test</a>
+            </li>
+            <li>
+                <a href="#">test</a>
+            </li>
+            <li>
+                <a href="#">test</a>
+            </li>
+            <li>
+                <a href="#">test</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <div class="top__content">
+            <h1>Quero Bolsa Indica</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+        </div>
+    </section>
+
+    <section class="content gray">
+        <div class='content__grid'>
+            <div class='content__grid__item'>
+                <h2> Lorem Ipsum is simply dummy text of the printing</h2>
+                <h3>Aldus PageMaker including versions of Lorem Ipsum</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                </p>
+
+                <div class="content__circle--steps">
+                    <div class="content__circle">1</div>
+                    <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+                <div class="content__circle--steps">
+                    <div class="content__circle">2</div>
+                    <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+                <div class="content__circle--steps">
+                    <div class="content__circle">3</div>
+                    <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class='content__grid__item'>
+
+                <form class="content__form">
+                    <fieldset>
+                        <h2>Participe, acumule pontos e ganhe!</h2>
+                        <p> Preencha os campos abaixo:</p>
+                        <div class="form__field">
+                            <label for="Situacao">Situacao</label>
+                            <select name="matricula" class="form__select">
+                                <option value="Vou me matricular">Vou me matricular</option>
+                                <option value="Nao vou me matricular">Nao vou me matricular</option>
+                            </select>
+                        </div>
+                        <div class="form__field">
+                            <label for="ensino">Instituicao de Ensino</label>
+
+                            <select name="universidade" class="form__select">
+                                <option value="Escolha uma universidade">Escolha uma universidade</option>
+                                <option value="Universidade 1">Universidade 1</option>
+                                <option value="Universidade 2">Universidade 2</option>
+                                <option value="Universidade 3">Universidade 3</option>
+                             </select>
+                            <div class="form__field">
+                                <div class="form__field">
+                                    <label for="ensino">Curso</label>
+                                    <select name="curso" class="form__select form__select--small">
+                                        <option value="Escolha uma universidade">Qual seu curso?</option>
+                                        <option value="Curso 1">Curso 1</option>
+                                        <option value="Curso 2">Curso 2</option>
+                                        <option value="Curso 3">Curso 3</option>
+                                    </select>
+                                </div>
+                                <label for="mensalidade">Mensalidade</label>
+                                <input name="mensalidade" type="text">
+                                <br>
+                                <button type="submit">Quero participar</button>
+                                <br>
+                                <a href="#">Leia o regulamento </a>
+                    </fieldset>
+                </form>
+                </div>
+
+                </div>
+    </section>
+
 </body>
 
 </html>
