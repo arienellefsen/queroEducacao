@@ -67,3 +67,43 @@
         }
     }
 }
+
+h2.title--h2 {
+    font-size: $h2-fontsize;
+    color: $black;
+    font-family: $sans-serif;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+
+.container__form {
+    padding-top: 20px;
+    label {
+        font-family: $sans-serif;
+        font-size: $font-text;
+        color: $gray;
+        line-height: 1.6em;
+    }
+    input {
+        height: 40px;
+        width: 85%;
+        border-radius: 5px;
+        color: #fff;
+        border: 1px solid #999;
+    }
+    button {
+        background: #ccc;
+        color: orange;
+        padding: 13px;
+        width: 69px;
+    }
+    h4 {
+        font-family: $sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        color: $gray;
+        line-height: 1.6em;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+}

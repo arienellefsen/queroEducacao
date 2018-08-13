@@ -31,27 +31,9 @@ module.exports = {
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            name: '[path][name].[ext]?[hash]',
-                            mozjpeg: {
-                                progressive: true,
-                                quality: 100
-                            },
-                            // optipng.enabled: false will disable optipng
-                            optipng: {
-                                enabled: false,
-                            },
-                            pngquant: {
-                                quality: '65-90',
-                                speed: 4
-                            },
-                            gifsicle: {
-                                interlaced: false,
-                            },
-                            // the webp option will enable WEBP
-                            webp: {
-                                quality: 75
-                            }
-                        }
+                            bypassOnDebug: true, // webpack@1.x
+                            disable: true, // webpack@2.x and newer
+                        },
                     },
                 ],
             },

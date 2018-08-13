@@ -25,7 +25,12 @@
          color: #fff;
      }
      &:hover {
-         background: red;
+         background: $hover-nav;
          padding: 12px;
      }
+ }
+ 
+ ul.top__nav--primary li.brand a {
+     text-transform: uppercase;
+     margin-left: -16px;
  }
