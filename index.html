@@ -81,17 +81,16 @@
                         <div class="content__circle">1</div>
                         <div class="separator--steps"></div>
 
-                        <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <p class="number"><strong>Aldus </strong>PageMaker including versions of Lorem Ipsum</p>
                     </div>
                     <div class="content__circle--steps">
                         <div class="content__circle">2</div>
                         <div class="separator--steps"></div>
-                        <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <p class="number"><strong>Aldus </strong>PageMaker including versions of Lorem Ipsum</p>
                     </div>
                     <div class="content__circle--steps">
                         <div class="content__circle">3</div>
-
-                        <p class="number">Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <p class="number adding-padding"><strong>Aldus </strong>PageMaker including versions of Lorem Ipsum</p>
                     </div>
                 </aside>
             </div>
@@ -118,31 +117,35 @@
                                 <option value="Universidade 3">Universidade 3</option>
                              </select>
                             <div class="form__field">
-                                <div class="form__field">
-                                    <label for="ensino">Curso</label><br>
+                                <div class="add-flex">
+                                    <label for="ensino">Curso</label>
+                                    <br>
+
                                     <select name="curso" class="form__select form__select--small">
                                         <option value="Escolha uma universidade">Qual seu curso?</option>
                                         <option value="Curso 1">Curso 1</option>
                                         <option value="Curso 2">Curso 2</option>
                                         <option value="Curso 3">Curso 3</option>
                                     </select>
-                                    <label for="mensalidade">Mensalidade</label>
-                                    <input name="mensalidade" type="text">
+                                    <label for="mensalidade" class="align-label">Mensalidade</label>
+                                    <input name="mensalidade" type="text" class="form__select--small2">
                                 </div>
-                                <br>
-                                <button type="submit">Quero participar</button>
-                                <br>
-                                <a href="#">Leia o regulamento </a>
+                            </div>
+                            <br>
+                            <button type="submit">Quero participar</button>
+                            <br>
+                            <a href="#">Leia o regulamento </a>
                     </fieldset>
                 </form>
                 </div>
-                </div>
     </section>
-    <section class="content fix--space">
+
+    <section class="content fix--space content-mobile">
         <div class="top__content">
             <h2 class="title--h2"> Lorem Ipsum is simply dummy text of the printing</h2>
         </div>
     </section>
+
     <section class="content fix--space">
         <div class='content__grid fix--padding'>
 
@@ -161,27 +164,31 @@
                         <img src="./src/assets/mobile-qb-indica@1x-(1)_21.jpg">
                         <img src="./src/assets/mobile-qb-indica@1x-(1)_23.jpg">
                     </div>
+
                 </div>
+                <div class="mobile--separator"></div>
+
             </div>
             <div class='content__grid__item'>
                 <h3 class="fix--line--height">Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
                 <div class="container__form">
                     <label for="mensalidade">Mensalidade</label>
                     <br>
-                    <input name="mensalidade" type="text"><button> Enviar</button>
+                    <input name="mensalidade" type="text" placeholder="Last name">
+                    <button> Enviar</button>
                     <h4> Lorem Ipsum is simply dummy text </h4>
-
                     <label for="mensalidade">Mensalidade</label>
                     <br>
-                    <input name="mensalidade" type="text"><button> Copiar</button>
+                    <input name="mensalidade" type="text" placeholder="Last name">
+                    <button> Copiar</button>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <section class="content blue fix--space margin">
-            <div class='content__grid adding-padding'>
-                <div class='content__grid__item info--bottom'>
+            <div class='content__grid adding-padding grid--row'>
+                <div class='content__grid__item info--bottom first'>
                     <img src="./src/assets/info-footer-phone.jpg" class="info__icon">
                     <span>0800 666 1010</span>
                     <div class="info--details">
@@ -189,39 +196,75 @@
                         <span>Seg - Sex das 9h as 23h</span>
                     </div>
                 </div>
-                <div class='content__grid__item info--bottom'>
+                <div class='content__grid__item info--bottom second'>
                     <img src="./src/assets/info-footer-chat.jpg" class="info__icon">
-                    <span class="border">Chat ao Vivo</span>
+                    <span class="border hidden-mobile">Chat ao Vivo</span>
                     <div class="info--details">
                         <span class="dot red"></span>
-                        <span>Fale com um atendente</span>
+                        <span class="hidden-mobile">Fale com um atendente</span>
+                        <span class="hidden-desktop">Chat</span>
+
                     </div>
                 </div>
 
 
                 <div class='content__grid__item info--bottom'>
                     <img src="./src/assets/info-footer-email.jpg" class="info__icon padding-image">
-                    <span class="border padding-span">Mande um E-mail</span>
+                    <span class="border padding-span hidden-mobile">Mande um E-mail</span>
                     <div class="info--details">
                         <span class="dot green"></span>
-                        <span>Fale com um atendente</span>
+                        <span class="hidden-mobile">Fale com um atendente</span>
+                        <span class="hidden-desktop">E-mail</span>
                     </div>
                 </div>
                 <div class='content__grid__item info--bottom'>
                     <img src="./src/assets/info-footer.jpg" class="info__icon padding-image">
-                    <span class="border padding-span">Central de Ajuda</span>
+                    <span class="border padding-span hidden-mobile">Central de Ajuda</span>
                     <div class="info--details">
                         <span class="dot green"></span>
-                        <span>Encontre todas as respostas</span>
+                        <span class="hidden-mobile">Encontre todas as respostas</span>
+                        <span class="hidden-desktop">Ajuda</span>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="content darkBlue fix--space add--padding">
-            <div class='content__grid'>
+            <div class='content__grid add-margin'>
                 <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
+                    <ul class="footer__list--links">
+                        <li>
+                            <a href="#"> link 1</a>
+                        </li>
+                        <li>
+                            <a href="#"> link 2</a>
+                        </li>
+                        <li>
+                            <a href="#"> link 3</a>
+                        </li>
+                        <li>
+                            <a href="#"> link 4</a>
+                        </li>
+
+                        <li class="hidden-desktop">
+                            <a href="#"> link 5</a>
+                        </li>
+                        <li class="hidden-desktop">
+                            <a href="#"> link 6</a>
+                        </li>
+                        <li class="hidden-desktop">
+                            <a href="#"> link 7</a>
+                        </li>
+                        <li class="hidden-desktop">
+                            <a href="#"> link 8</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class='content__grid__item hidden-mobile'>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
                     <ul class="footer__list--links">
                         <li>
                             <a href="#"> link 1</a>
@@ -238,8 +281,8 @@
 
                     </ul>
                 </div>
-                <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
+                <div class='content__grid__item hidden-mobile'>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
                     <ul class="footer__list--links">
                         <li>
                             <a href="#"> link 1</a>
@@ -256,8 +299,8 @@
 
                     </ul>
                 </div>
-                <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
+                <div class='content__grid__item hidden-mobile'>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
                     <ul class="footer__list--links">
                         <li>
                             <a href="#"> link 1</a>
@@ -274,8 +317,8 @@
 
                     </ul>
                 </div>
-                <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
+                <div class='content__grid__item hidden-mobile'>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
                     <ul class="footer__list--links">
                         <li>
                             <a href="#"> link 1</a>
@@ -292,26 +335,8 @@
 
                     </ul>
                 </div>
-                <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
-                    <ul class="footer__list--links">
-                        <li>
-                            <a href="#"> link 1</a>
-                        </li>
-                        <li>
-                            <a href="#"> link 2</a>
-                        </li>
-                        <li>
-                            <a href="#"> link 3</a>
-                        </li>
-                        <li>
-                            <a href="#"> link 4</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class='content__grid__item'>
-                    <h5>Encontre sua Bolsa </h5>
+                <div class='content__grid__item hidden-mobile'>
+                    <h5 class="hidden-mobile">Encontre sua Bolsa </h5>
                     <ul class="footer__list--links">
                         <li>
                             <a href="#"> link 1</a>
@@ -332,28 +357,28 @@
         </section>
         <section class="content darkBlue fix--space border--top add--padding">
             <div class='content__grid'>
-                <div class='content__grid__item'>
+                <div class='content__grid__item hidden-mobile'>
                     <h4 class="info--header">Somos destaque na imprensa</h4>
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_29.jpg" class="fix--image--space">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_31.jpg">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_32.jpg" class="fix--image">
                 </div>
-                <div class='content__grid__item'>
-                    <h4 class="info--header">Conecte-se as nossas redes sociais</h4>
+                <div class='content__grid__item center--mobile order-item-3 change-column'>
+                    <h4 class="info--header hidden-mobile">Conecte-se as nossas redes sociais</h4>
                     <img src="./src/assets/social-youtube.jpg" class="footer__icon--social">
                     <img src="./src/assets/instagram_02.jpg" class="footer__icon--social">
-                    <img src="./src/assets/twitter_01.jpg" class="footer__icon--social">
+                    <img src="./src/assets/twitter_01.jpg" class="footer__icon--social hidden-mobile">
                     <img src="./src/assets/facebook_02.jpg" class="footer__icon--social">
-                    <span class="footer__details"> 500k likes</span>
+                    <span class="footer__details hidden-mobile"> 500k likes</span>
                 </div>
-                <div class='content__grid__item'>
+                <div class='content__grid__item hidden-mobile'>
                     <h4 class="info--header">Atendimento de excelencia</h4>
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_17.jpg">
                     <span class="footer__details"> Campea 2015<br>
                     Educacao Presencial</span>
 
                 </div>
-                <div class='content__grid__item'>
+                <div class='content__grid__item hidden-mobile'>
                     <h4 class="info--header">Politica Bolsa Garantida</h4>
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_19.jpg">
                     <span class="footer__details"> Voce na faculdade ou seu <br>dinheiro de volta</span>
@@ -369,7 +394,7 @@
                     <h4>Rede ALumini 2011 - 2016</h4>
                     <h4>CNPJ:10.542.212/0001-54</h4>
                 </div>
-                <div class='content__grid__item width'>
+                <div class='content__grid__item width order-item-2'>
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_47.jpg">
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_49.jpg">
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_51.jpg">
@@ -379,10 +404,9 @@
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_55.jpg">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_57.jpg">
                 </div>
-                <div class='content__grid__item'>
+                <div class='content__grid__item order-item-1'>
                     <h4>Feito com amor pelo Quero Educacao </h4>
                 </div>
-
             </div>
         </section>
         <footer>

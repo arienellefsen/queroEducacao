@@ -46,9 +46,6 @@ img.top__icon {
 /* Mobile Styles */
 
 @media only screen and (max-width: 520px) {
-    body {
-        background-color: #F09A9D;
-    }
     .top__text--desktop,
     .top__icon--informacao {
         display: none;
@@ -95,7 +92,6 @@ img.top__icon {
 
 @media only screen and (min-width: 520px) and (max-width: 960px) {
     body {
-        background-color: #F5CF8E;
         /* Yellow */
     }
     .top__icon--ajuda,
@@ -112,41 +108,6 @@ img.top__icon {
 
 @media only screen and (min-width: 961px) {
     body {
-        background-color: #B2D6FF;
-        /* Blue */
-    }
-    .top__icon--ajuda,
-    .top__text--mobile {
-        display: none;
-    }
-    .top__icon--login span.top__icon--separator {
-        display: none;
-    }
-}
-
-
-/* Tablet Styles */
-
-@media only screen and (min-width: 520px) and (max-width: 960px) {
-    body {
-        background-color: #F5CF8E;
-        /* Yellow */
-    }
-    .top__icon--ajuda,
-    .top__text--mobile {
-        display: none;
-    }
-    .top__text--desktop {
-        display: block;
-    }
-}
-
-
-/* Desktop Styles */
-
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: #fff;
         /* Blue */
     }
     .top__icon--ajuda,

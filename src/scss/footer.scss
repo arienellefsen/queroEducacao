@@ -6,6 +6,7 @@ footer {
     .adding-padding {
         padding-top: 10px;
         padding-bottom: 20px;
+        margin-left: -50px;
     }
     h4 {
         color: #9ee6f4;
@@ -46,7 +47,7 @@ ul.footer__list--links li {
 }
 
 .padding-image {
-    top: 11px !important;
+    top: 20px !important;
 }
 
 .padding-span {
@@ -97,7 +98,7 @@ img.footer__icon--social {
     display: inline-block;
     padding-top: -30px;
     position: relative;
-    top: -12px;
+    top: -16px;
 }
 
 .width {
@@ -107,3 +108,78 @@ img.footer__icon--social {
 .footer--bottom {
     padding-bottom: 10px;
 }
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 520px) {
+    ul.footer__list--links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -1px;
+        margin-bottom: -33px;
+        margin-top: -20px;
+        li {
+            font-size: 14px;
+            flex-grow: 1;
+            flex-basis: auto;
+            margin: .25em 0;
+            padding: 0 1em;
+            text-align: center;
+            border-left: 1px solid $blue;
+            height: 17px;
+            margin-bottom: 10px;
+            color: $blue;
+        }
+        li:first-child {
+            border-left: none;
+        }
+    }
+    .grid--row {
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .add-margin {
+        width: 70%;
+        margin-right: 20px;
+    }
+    .center--mobile {
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: -30px;
+    }
+    img.footer__icon--social {
+        padding-right: 30px;
+    }
+    .order-item-3 {
+        order: 2;
+    }
+    .order-item-1 {
+        order: 1;
+    }
+    .order-item-2 {
+        order: 3;
+    }
+}
+
+.change-column {
+    flex-flow: column !important;
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 520px) and (max-width: 960px) {}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {}
