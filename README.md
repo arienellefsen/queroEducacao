@@ -1,6 +1,5 @@
 # queroEducacao
-teste empresa
-
+Como instalar o projeto: 
 git clone https://github.com/arienellefsen/queroEducacao.git
 
 ## npm i 
