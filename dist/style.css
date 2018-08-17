@@ -159,9 +159,9 @@ ul.top__nav--primary li.brand a {
     left: 18px !important; }
   h3.right {
     position: relative;
-    left: 11px;
+    left: 8px;
     right: 0px;
-    top: 0px;
+    top: 16px;
     bottom: 0px; }
   header .top__header h3 {
     margin-left: -10px;
@@ -547,6 +547,10 @@ footer h5 {
   font-size: 12px;
   padding-bottom: 15px; }
 
+.add--padding {
+  padding-top: 26px !important;
+  padding-bottom: 54px !important; }
+
 ul.footer__list--links li {
   list-style: none;
   line-height: 24px;
@@ -652,8 +656,8 @@ img.footer__icon--social {
     margin-right: 20px; }
   .center--mobile {
     text-align: center;
-    margin-top: -20px;
-    margin-bottom: -30px; }
+    margin-top: -10px;
+    margin-bottom: 10px; }
   img.footer__icon--social {
     padding-right: 30px; }
   .align-text {
@@ -685,10 +689,9 @@ img.footer__icon--social {
   footer .adding-padding {
     padding-top: 10px !important;
     padding-bottom: 20px !important;
-    margin-left: -50px; }
-  .add--padding {
-    padding-top: 26px !important;
-    padding-bottom: 54px !important; } }
+    margin-left: -20px; }
+  .add--padding-bottom {
+    padding-bottom: 20px; } }
 
 /* Tablet Styles */
 /* Desktop Styles */
