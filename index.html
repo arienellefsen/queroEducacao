@@ -21,7 +21,7 @@
                 <h3>0800909090</h3>
             </div>
             <div class="top__icon--ajuda top__icon--separator">
-                <img src='./src/assets/mobile-qb-indica@1x-(1)_06.jpg' class="top__icon" />
+                <img src='./src/assets/mobile-qb-indica@1x-(1)_06.jpg' class="top__icon left" />
                 <h3>Ajuda</h3>
             </div>
             <div class='top__icon--logo'>
@@ -31,31 +31,33 @@
                 <span class="top__icon--separator"></span>
                 <h3 class="top__text--desktop">Entre ou crie sua conta</h3>
                 <img src='./src/assets/mobile-qb-indica@1x-(1)_09.jpg' class="top__icon" />
-                <h3 class="top__text--mobile">Entrar</h3>
+                <h3 class="top__text--mobile right">Entrar</h3>
             </div>
         </div>
     </header>
 
     <nav>
-
         <ul class="top__nav--primary">
             <li class="brand">
                 <a href="#">Minha Conta </a>
             </li>
-            <li>
+            <li class="hidden-mobile">
                 <a href="#">test</a>
             </li>
-            <li>
+            <li class="hidden-mobile">
                 <a href="#">test</a>
             </li>
-            <li>
+            <li class="hidden-mobile">
                 <a href="#">test</a>
             </li>
-            <li>
+            <li class="hidden-mobile">
                 <a href="#">test</a>
             </li>
-            <li>
+            <li class="hidden-mobile">
                 <a href="#">test</a>
+            </li>
+            <li class="hidden-desktop menu">
+                <a href="#">Menu</a>
             </li>
         </ul>
     </nav>
@@ -230,6 +232,7 @@
             </div>
         </section>
 
+
         <section class="content darkBlue fix--space add--padding">
             <div class='content__grid add-margin'>
                 <div class='content__grid__item'>
@@ -355,7 +358,28 @@
                 </div>
             </div>
         </section>
-        <section class="content darkBlue fix--space border--top add--padding">
+
+
+        <section class="content dark--blue--footer fix--space footer--bottom hidden-desktop add--padding-bottom">
+            <div class='content__grid'>
+
+                <div class='content__grid__item width add--padding-bottom'>
+                    <img src="./src/assets/mobile-qb-indica@1x-(1)_47.jpg">
+                    <img src="./src/assets/mobile-qb-indica@1x-(1)_49.jpg">
+                    <img src="./src/assets/mobile-qb-indica@1x-(1)_51.jpg">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_49.jpg">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_51.jpg" class="hidden-mobile">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_53.jpg">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_55.jpg" class="hidden-mobile">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_57.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="content darkBlue fix--space border--top fix--padding change--background">
             <div class='content__grid'>
                 <div class='content__grid__item hidden-mobile'>
                     <h4 class="info--header">Somos destaque na imprensa</h4>
@@ -388,24 +412,33 @@
             </div>
         </section>
 
-        <section class="content dark--blue--footer fix--space footer--bottom">
+        <section class="content dark--blue--footer fix--space footer--bottom border--top">
             <div class='content__grid'>
-                <div class='content__grid__item'>
+                <div class='content__grid__item hidden-mobile'>
                     <h4>Rede ALumini 2011 - 2016</h4>
                     <h4>CNPJ:10.542.212/0001-54</h4>
                 </div>
-                <div class='content__grid__item width order-item-2'>
+                <div class='content__grid__item width hidden-mobile'>
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_47.jpg">
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_49.jpg">
                     <img src="./src/assets/mobile-qb-indica@1x-(1)_51.jpg">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_49.jpg">
-                    <img src="./src/assets/desktop-qb-indica@1x-(1)_51.jpg">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_51.jpg" class="hidden-mobile">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_53.jpg">
-                    <img src="./src/assets/desktop-qb-indica@1x-(1)_55.jpg">
+                    <img src="./src/assets/desktop-qb-indica@1x-(1)_55.jpg" class="hidden-mobile">
                     <img src="./src/assets/desktop-qb-indica@1x-(1)_57.jpg">
                 </div>
-                <div class='content__grid__item order-item-1'>
+                <div class='content__grid__item hidden-mobile'>
                     <h4>Feito com amor pelo Quero Educacao </h4>
+                </div>
+
+                <div class='content__grid__item align-text hidden-desktop'>
+                    <h4>Feito com amor pelo Quero Educacao </h4>
+                </div>
+
+                <div class='content__grid__item align-tex hidden-desktop'>
+                    <h4>Rede ALumini 2011 - 2016</h4>
+                    <h4 class="align-tex">CNPJ:10.542.212/0001-54</h4>
                 </div>
             </div>
         </section>

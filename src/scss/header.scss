@@ -11,16 +11,15 @@ header {
             font-size: $font-text;
             color: $gray;
             font-weight: 300;
-            padding-right: 10px;
+            @include padding-sides(0px, 10px, 0px, 0px);
         }
     }
 }
 
 .top__icon--informacao {
     @include flexBox(flex-start, center);
-    padding-right: 10px;
     height: 25px;
-    margin-right: -5px;
+    @include padding-sides(0px, 10px, 0px, -5px);
 }
 
 img.top__icon {
@@ -34,8 +33,7 @@ img.top__icon {
 .top__icon--separator {
     border-right: 1px solid #999;
     height: 64px;
-    margin-right: 10px;
-    margin-left: 8px;
+    @include padding-sides(0px, 0px, 8px, 10px);
 }
 
 .top__icon--ajuda {
@@ -51,13 +49,11 @@ img.top__icon {
         display: none;
     }
     .top__icon--separator {
-        margin-right: 16px;
-        padding-right: 29px;
+        @include padding-sides(0px, 29px, 16px, 10px);
     }
     .top__icon--ajuda {
         @include flexBox(flex-end, flex-end);
-        padding-bottom: 6px;
-        padding-top: 8px;
+        @include padding-top-bottom(8px, 6px, 0px, 0px);
     }
     img.top__icon {
         margin: auto !important;
@@ -91,9 +87,6 @@ img.top__icon {
 /* Tablet Styles */
 
 @media only screen and (min-width: 520px) and (max-width: 960px) {
-    body {
-        /* Yellow */
-    }
     .top__icon--ajuda,
     .top__text--mobile {
         display: none;
@@ -107,9 +100,6 @@ img.top__icon {
 /* Desktop Styles */
 
 @media only screen and (min-width: 961px) {
-    body {
-        /* Blue */
-    }
     .top__icon--ajuda,
     .top__text--mobile {
         display: none;

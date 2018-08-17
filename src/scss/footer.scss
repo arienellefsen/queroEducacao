@@ -20,6 +20,11 @@ footer {
     }
 }
 
+.add--padding {
+    padding-top: 26px !important;
+    padding-bottom: 54px !important;
+}
+
 ul.footer__list--links li {
     list-style: none;
     line-height: 24px;
@@ -66,11 +71,6 @@ ul.footer__list--links li {
 
 .border--top {
     border-top: 1px solid #0b8ca1;
-}
-
-.add--padding {
-    padding-top: 26px;
-    padding-bottom: 54px;
 }
 
 h4.info--header {
@@ -144,6 +144,8 @@ img.footer__icon--social {
         }
     }
     .grid--row {
+        flex-flow: column;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: stretch;
     }
@@ -153,25 +155,52 @@ img.footer__icon--social {
     }
     .center--mobile {
         text-align: center;
-        margin-top: -20px;
-        margin-bottom: -30px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
     img.footer__icon--social {
         padding-right: 30px;
     }
-    .order-item-3 {
-        order: 2;
+    .align-text {
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
-    .order-item-1 {
-        order: 1;
+    .content__grid__item h4 {
+        line-height: 18px;
+        text-align: center;
     }
-    .order-item-2 {
-        order: 3;
+    .change--background {
+        background-color: $bluefooter;
     }
-}
-
-.change-column {
-    flex-flow: column !important;
+    .info--content {
+        display: flex;
+        height: 80px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        background-color: DodgerBlue;
+        div:first-child {
+            width: 160px;
+        }
+        div {
+            background-color: #f1f1f1;
+            width: 69px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            height: 100%;
+            margin-right: 10px;
+            border-right: 1px solid red;
+        }
+    }
+    footer .adding-padding {
+        padding-top: 10px !important;
+        padding-bottom: 20px !important;
+        margin-left: -20px;
+    }
+    .add--padding-bottom {
+        padding-bottom: 20px;
+    }
 }
 
 

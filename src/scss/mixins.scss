@@ -1,5 +1,27 @@
 @mixin flexBox($justify-content, $align) {
     display: flex;
-    align-items: $align;
     justify-content: $justify-content;
+    align-items: $align;
+}
+
+@mixin padding-sides($left, $right, $margin-left, $margin-right) {
+    padding-left: $left;
+    padding-right: $right;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+
+@mixin padding-top-bottom($top, $bottom, $margin-top, $margin-bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin position($left, $right, $top, $bottom) {
+    position: relative;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
 }
